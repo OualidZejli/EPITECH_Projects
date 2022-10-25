@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    background: linear-gradient(90deg, #3AB3B0 0%, #55367D 100%);
+    height: 12vh;
+    width: 100%;
+    box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.564);
+}
+
+ul{
+    float: right;
+    margin-right: 5vh;
+}
+
+li{
+    display: inline-block;
+    line-height: 12vh;
+    margin: 0 1vh;
+}
+
+.aresnav{
+    color: #f3ae43;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border-radius: 3px;
+    
+}
+
+.abasic{
+    display: inline-block;
+    color: #f3ae43;
+    font-size: 2vh;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border-radius: 3px;
+    
+}
+
+.aresnav:hover{
+    background: white;
+    transition: .5s;
+}
+
+.abasic:hover{
+    background: none;
+    color: #55367D;
+}
+
+/*Responsive Navigation Bar*/
+.logo{
+    width: 10vh;
+    margin-left: 5vh;
+    margin-top: 1vh;
+}
+
+.scrollmenu{
+    font-size: 7vh;
+    color: #f3ae43;
+    float: right;
+    line-height: 12vh;
+    margin-right: 7vh;
+    display: none;
+    cursor: pointer;
+}
+
+#checkboxid{
+    display: none;
+}
+
+@media (max-width: 1282px){
+    .scrollmenu{
+        display: block;
+    }
+
+    ul{
+        width: 100%;
+        height: 100vh;
+        background: whitesmoke;
+        top: 12vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        position: fixed;
+    }
+
+    li{
+        display: block;
+        margin: 10vh;
+        line-height: 3vh;
+    }
+
+    .aresnav{
+        font-size: 5vh;
+    }
+
+    .abasic{
+        font-size: 60%;
+    }
+
+    .aresnav:hover{
+        background: none;
+        color: #55367D;
+    }
+
+    #checkboxid:checked ~ ul{
+        left: 0;
+    }
+}
+/*Fin Responsive Navigation Bar*/
+
+
+.box{
+    width: 30%;
+    float: left;
+    margin: 5vh 2vh;
+    background-color: #fff;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 1vh 1vh rgba(0,0,0,.15);
+}
+
+.box h2{
+    margin-bottom: 1vh;
+}
+
+.box p{
+    font-size: 2vh;
+    line-height: 3vh;
+    height: 90px;
+    overflow: hidden;
+}
+
+.learnmore-btn{
+    display: inline-block;
+    color: white;
+    background-color: #55367D;
+    text-decoration: none;
+    padding: 1vh 2vh;
+    border-radius: 2vh;
+    margin-top: 2vh;
+}
+
+.learnmore-btn:hover{
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.box.showContent p{
+    height: auto;
+}
+
+.box.showContent a.learnmore-btn{
+    background-color: red;
+}

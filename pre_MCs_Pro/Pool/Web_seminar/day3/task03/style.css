@@ -1,0 +1,121 @@
+@media screen and (max-width:767px){
+    header{
+        background-color: blue;
+        height: 11vh;
+    }
+
+    .section1{
+        background-color: greenyellow;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article1{
+        background-color: yellow;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article2{
+        background-color: yellow;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article3{
+        background-color: blueviolet;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article4{
+        background-color: blueviolet;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article5{
+        background-color: palevioletred;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article6{
+        background-color: palevioletred;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    footer{
+        background-color: red;
+        height: 10vh;
+        position: sticky;
+        bottom: 1vh;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    header{
+        background-color: blue;
+        height: 11vh;
+        height: 50%;
+    }
+
+    .section1{
+        background-color: greenyellow;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article1{
+        background-color: yellow;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article2{
+        background-color: yellow;
+        height: 23vh;
+        margin-top: 2vh;
+        margin-left: 2vh
+    }
+
+    .article3{
+        background-color: blueviolet;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article4{
+        background-color: blueviolet;
+        height: 23vh;
+        margin-top: 2vh;
+        margin-left: 2vh
+    }
+
+    .article5{
+        background-color: palevioletred;
+        height: 23vh;
+        margin-top: 2vh;
+    }
+
+    .article6{
+        background-color: palevioletred;
+        height: 23vh;
+        margin-top: 2vh;
+        margin-left: 2vh
+    }
+
+    footer{
+        background-color: red;
+        height: 10vh;
+        position: sticky;
+        bottom: 1vh;
+    }
+
+    .gridtab{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
